@@ -35,10 +35,19 @@ gem 'will_paginate', '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'rails-controller-testing'
 
+<<<<<<< HEAD
 #Adding webpacker for Javascript library management
 gem 'webpacker', '~> 3.3'
 #React gem for Rails
 gem 'react-rails'
+=======
+# Adding webpacker for Javascript file management
+gem 'webpacker', '~> 3.3'
+
+# React gem for Rails
+gem 'react-rails'
+
+>>>>>>> 2a8b1d15417c52942326dc44f3b7937e7d2aee00
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -2,9 +2,12 @@ Rails.application.configure do
   # Verifies that versions and hashed value of the package contents in the project's package.json
 config.webpacker.check_yarn_integrity = true
 
+<<<<<<< HEAD
   # Verifies that versions and hashed value of the package contents in the project's package.json
 config.webpacker.check_yarn_integrity = false
 
+=======
+>>>>>>> 2a8b1d15417c52942326dc44f3b7937e7d2aee00
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
