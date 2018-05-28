@@ -6,23 +6,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-<<<<<<< HEAD
     <%= javascript_pack_tag 'application' %>  
-=======
     <%= javascript_pack_tag 'application' %>
->>>>>>> 2a8b1d15417c52942326dc44f3b7937e7d2aee00
   </head>
 
   <body>
     <%= render 'layouts/navigation' %>
     <%= render 'layouts/messages' %>
     <div class="container">
-<<<<<<< HEAD
-      <%= react_component("HelloWorld", {message: "Hi"}) %>  
-=======
-      
-    <%= react_component("HelloWorld", { greeting: "Hello" }) %>  
->>>>>>> 2a8b1d15417c52942326dc44f3b7937e7d2aee00
       <%= yield %>
     </div>
     <%= render 'layouts/footer' %>
