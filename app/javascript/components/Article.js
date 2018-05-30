@@ -14,8 +14,7 @@ class Article extends React.Component {
             <div className="article-meta-details">
                 <small>Created by: {this.props.author}, &nbsp;
                        <Timestamp time={this.props.created_at} precision={3} />, 
-                       last updated: <Timestamp time={this.props.updated_at} precision={3}/>
-                </small>
+                       last updated: <Timestamp time={this.props.updated_at} precision={3}/></small>
             </div>
         </div>
       </React.Fragment>
@@ -24,7 +23,7 @@ class Article extends React.Component {
     
     componentDidMount() {
         var self = this;
-        setInterval(function() { self.forceUpdate() }, 1000)
+        this._timer = setInterval(function() { self.forceUpdate() }, 1000);
     }
     
     componentWillUnmount() {
@@ -43,4 +42,5 @@ Article.propTypes = {
   created_at: PropTypes.string,
   updated_at: PropTypes.string
 };
+
 export default Article
